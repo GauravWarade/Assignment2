@@ -1,0 +1,4 @@
+select department.Dname, count(*) as NumberOfEmployees
+from employee 
+inner join department on employee.DeptNo = department.DeptNo 
+group by department.Dname
